@@ -1,2 +1,2 @@
 # My-Portofolio
-A simple django portfolio
+A simple website showing my portfolio
