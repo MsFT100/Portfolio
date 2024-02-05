@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Skills">Skills</a></li>
+            <li><a href="Projects">Projects</a></li>
+            <li>
+                <button id="downloadButton">CV download</button>
+            </li>
+            
+        </ul>
+        <script>
+            document.getElementById('downloadButton').addEventListener('click', function() {
+                window.location.href = '/docs/CV(Lennox).pdf';  // Replace with the actual path to your PDF file
+            });
+        </script>
+    </nav>
+    <div>
+        <section id="Home">
+            <div>
+                <h2>Welcome to my portfolio!</h2>
+                <p>I'm a web developer with experience in HTML, CSS and JavaScript. I specialize in frontend development using ReactJS.</p>
+                <p>This is a website showcasing my skills and projects as a web developer.</p>
+            </div>
+            <img src="images/me.jpg" alt="Me standing in front of a city skyline with the silhouette of a skyscraper on the right side"/>
+            <img src="images/me.jpg" alt="Me in front of computer"/>
+        </section>
+        
+        <section id="Skills">
+            <h3>Skills:</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>ReactJS / Redux</li>
+                <li>Node.js / Express</li>
+                <li>MongoDB / Firebase</li>
+                <li>Responsive Design</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python </li>
+                <li>Python WebFrameworks:
+                    <ul>
+                        <li>Django + html + css</li>
+                        <li>Django Rest Framework + React</li>
+                    </ul>
+                </li>
+                <li>Mobile Development
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>Flutter</li>
+                    </ul>
+                </li>
+                <li>Cisco  Networking Fundamentals:
+                    <ul>
+                        <li>CCNA 1 and 2</li>
+                        <li>CyberSecurity</li>
+                        <li>DevOps</li>
+                    </ul>
+                </li>
+                <li>Unity  Game Engine</li>
+
+            </ul>
+        </section>
+        
+        <section id="Projects">
+            <h3>Projects:</h3>
+            <div class="project">
+                <h4>Weather App</h4>
+                <p>A simple weather app built using Python and OpenWeathermap API.</p>
+                <button onclick="window.location='weatherapp'">View Project</button>
+            </div>
+            <div class="project">
+                <h4>Online Polling Website</h4>
+                <p>An online polling system</p>
+                <button onclick="window.location='https://github.com/MsFT100/votingproject.git'">View Project on GitHub</button>
+            </div>
+            <div class="project">
+                <h4>Online Bakery</h4>
+                <p>An online baking delivery shop system</p>
+                <button onclick="window.location='https://github.com/MsFT100/online-marketing-and-social-platform-for-bakers-and-clients'">View Project on GitHub</button>
+            </div>
+            <div class="project large">
+                <h4>Personal Website</h4>
+                <p>The project that spawned this portfolio site, featuring an interactive resume builder with Node.js and Express.</p>
+                <p>The project that spawned this portfolio site, featuring an interactive resume builder with Node.js and Express.</p>
+                <p>This very site, built with HTML5/CSS3/JavaScript and hosted on GitHub Pages.</p>
+                <button onclick="window.location='https://github.com/MsFT100/My-Portofolio'">View Source Code</button>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>
