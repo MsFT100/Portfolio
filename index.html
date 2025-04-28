@@ -1,102 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lennox Mathew Omoiti - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="main.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="Home">Home</a></li>
-            <li><a href="Skills">Skills</a></li>
-            <li><a href="Projects">Projects</a></li>
-            <li>
-                <button id="downloadButton">CV download</button>
-            </li>
-            
-        </ul>
-        <script>
-            document.getElementById('downloadButton').addEventListener('click', function() {
-                window.location.href = '/docs/CV(Lennox).pdf';  // Replace with the actual path to your PDF file
-            });
-        </script>
-    </nav>
-    <div>
-        <section id="Home">
-            <div>
-                <h2>Welcome to my portfolio!</h2>
-                <p>I'm a web developer with experience in HTML, CSS and JavaScript. I specialize in frontend development using ReactJS.</p>
-                <p>This is a website showcasing my skills and projects as a web developer.</p>
-            </div>
-            <img src="images/me.jpg" alt="Me standing in front of a city skyline with the silhouette of a skyscraper on the right side"/>
-            <img src="images/me.jpg" alt="Me in front of computer"/>
-        </section>
-        
-        <section id="Skills">
-            <h3>Skills:</h3>
-            <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript (ES6)</li>
-                <li>ReactJS / Redux</li>
-                <li>Node.js / Express</li>
-                <li>MongoDB / Firebase</li>
-                <li>Responsive Design</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python </li>
-                <li>Python WebFrameworks:
-                    <ul>
-                        <li>Django + html + css</li>
-                        <li>Django Rest Framework + React</li>
-                    </ul>
-                </li>
-                <li>Mobile Development
-                    <ul>
-                        <li>Android Studio</li>
-                        <li>Flutter</li>
-                    </ul>
-                </li>
-                <li>Cisco  Networking Fundamentals:
-                    <ul>
-                        <li>CCNA 1 and 2</li>
-                        <li>CyberSecurity</li>
-                        <li>DevOps</li>
-                    </ul>
-                </li>
-                <li>Unity  Game Engine</li>
 
-            </ul>
-        </section>
-        
-        <section id="Projects">
-            <h3>Projects:</h3>
-            <div class="project">
-                <h4>Weather App</h4>
-                <p>A simple weather app built using Python and OpenWeathermap API.</p>
-                <button onclick="window.location='weatherapp'">View Project</button>
-            </div>
-            <div class="project">
-                <h4>Online Polling Website</h4>
-                <p>An online polling system</p>
-                <button onclick="window.location='https://github.com/MsFT100/votingproject.git'">View Project on GitHub</button>
-            </div>
-            <div class="project">
-                <h4>Online Bakery</h4>
-                <p>An online baking delivery shop system</p>
-                <button onclick="window.location='https://github.com/MsFT100/online-marketing-and-social-platform-for-bakers-and-clients'">View Project on GitHub</button>
-            </div>
-            <div class="project large">
-                <h4>Personal Website</h4>
-                <p>The project that spawned this portfolio site, featuring an interactive resume builder with Node.js and Express.</p>
-                <p>The project that spawned this portfolio site, featuring an interactive resume builder with Node.js and Express.</p>
-                <p>This very site, built with HTML5/CSS3/JavaScript and hosted on GitHub Pages.</p>
-                <button onclick="window.location='https://github.com/MsFT100/My-Portofolio'">View Source Code</button>
-            </div>
-        </section>
-        
+  <!-- Navigation -->
+<nav>
+    <div class="container">
+      <div class="logo">Lennox Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#" id="downloadButton">Download CV</a></li>
+        <li><a href="#" id="themeToggle">🌙</a></li>
+      </ul>
     </div>
+  </nav>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="intro">
+        <h1>Hi, I'm Lennox Mathew Omoiti</h1>
+        <p>Innovative and results-driven Software Engineer experienced in web development, mobile app development, and cybersecurity solutions.</p>
+        <p>I specialize in backend development (Node.js, PHP), mobile development (Flutter, Xamarin), and cybersecurity (firewalls, penetration testing).</p>
+        <img src="images/passport_lennox.jpg" alt="Portrait of Lennox Mathew Omoiti" class="profile-img">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/lennox-mathew" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="https://github.com/lennoxmathew" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="contact-info">
+          <p><strong>Phone:</strong> +254 1141 04766</p>
+          <p><strong>Email:</strong> <a href="mailto:lennoxmathew@gmail.com">lennoxmathew@gmail.com</a></p>
+          <p><strong>Location:</strong> Kisumu, Kenya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Backend Development (Node.js, PHP, MySQL, APIs)</li>
+        <li>Mobile App Development (Flutter, Xamarin, Android SDK)</li>
+        <li>Programming Languages: C#, C++, Python, Java</li>
+        <li>Web Development: HTML5, CSS3, JavaScript, Bootstrap, jQuery</li>
+        <li>Cybersecurity Solutions: Firewalls, Antivirus, Penetration Testing</li>
+        <li>Tools: Docker, Git, Postman, VS Code, Android Studio</li>
+        <li>Project Management: Agile Methodology, JIRA, Trello</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A simple weather app built using nextJs, Django and OpenWeatherMap API.</p>
+        <a href="https://github.com/MsFT100/weather_app" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>My personal website built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/MsFT100/My-Portofolio" class="btn" target="_blank" rel="noopener">View Source Code</a>
+      </div>
+
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="experience-item">
+        <h3>Freelance Backend Web Developer</h3>
+        <p><strong>Self-Employed</strong> | May 2023 – Present</p>
+        <ul>
+          <li>Developed backend solutions using PHP, Django, Node.js, and MySQL.</li>
+          <li>Integrated payment systems and optimized server performance.</li>
+          <li>Built and managed custom APIs to enhance client-facing platforms.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Android App Developer</h3>
+        <p><strong>Self-Employed</strong> | March 2023 – Present</p>
+        <ul>
+          <li>Designed and developed Android/iOS apps using C# (Xamarin) and Flutter.</li>
+          <li>Implemented features like user authentication, location services, and real-time data sync.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Cybersecurity Consultant</h3>
+        <p><strong>Self-Employed</strong> | January 2024 – April 2024</p>
+        <ul>
+          <li>Installed and configured firewalls, antivirus, and data encryption tools.</li>
+          <li>Helped businesses address vulnerabilities and meet cybersecurity standards.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <h3>Diploma in Software Engineering</h3>
+        <p>Zetech University | September 2021 – 2023</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+        <p>St. Ignatius Mukumu Boys High School | 2016 – 2019</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Kenya Certificate of Primary Education (KCPE)</h3>
+        <p>St. George’s Primary School | 2013 – 2015</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lennox Mathew Omoiti | Software Engineer | Kisumu, Kenya</p>
+      <p>Phone: +254 1141 04766 | Email: <a href="mailto:lennoxmathew@gmail.com">lennoxmathew@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+      window.location.href = '/docs/CV-2024.pdf';
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      this.textContent = newTheme === 'light' ? '🌙' : '☀️';
+    });
+  </script>
+
 </body>
 </html>
